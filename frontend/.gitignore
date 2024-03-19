@@ -1,0 +1,4 @@
+.gitignoretest.log
+.eslintignore
+.eslintrc.json
+node_modules
