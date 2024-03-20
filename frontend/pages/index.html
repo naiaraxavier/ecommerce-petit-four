@@ -21,35 +21,38 @@
 <body>
 
   <!-- Header da página -->
-  <header>
-    <div>
+  <header class="fixed-top">
+    <div class="d-flex justify-content-between p-2 bg-light">
 
-      <div>
+      <div class="ms-4">
         <a href="#home" class="logo">
           <img src="../img/logo.png" alt="logo">
         </a>
       </div>
 
-      <div>
+      <div class="me-5">
         <i class="fa-solid fa-cart-shopping"></i>
-        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-user ms-3"></i>
       </div>
 
     </div>
 
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="#home"> Home </a>
+    <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item me-2">
+          <a class="nav-link text-light active" aria-current="page" href="#home"> Home </a>
         </li>
-        <li>
-          <a href="../pages/products.html"> Produtos </a>
+        <li class="nav-item me-2">
+          <a class="nav-link text-light" href="../pages/products.html"> Produtos </a>
         </li>
-        <li>
-          <a href="#about"> Sobre </a>
+        <li class="nav-item me-2">
+          <img src="../img/logo.png" alt="logo">
         </li>
-        <li>
-          <a href="#contacts"> Contatos </a>
+        <li class="nav-item me-2">
+          <a class="nav-link text-light" href="#about"> Quem sou </a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link text-light" href="#contacts"> Contatos </a>
         </li>
       </ul>
     </nav>

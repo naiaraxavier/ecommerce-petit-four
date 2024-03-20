@@ -27,7 +27,17 @@ section {
   min-height: 100vh;
 }
 
-/* Estilo do carrossel */
+/* Navbar */
+.navbar {
+  background-color: #62C3E7;
+}
+
+.navbar ul {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Carrossel */
 .carousel-indicators li {
   position: relative;
   -webkit-box-flex: 0;
