@@ -27,9 +27,20 @@ section {
   min-height: 100vh;
 }
 
+/* Header */
+.logo img {
+  width: 150px;
+}
+
+.icons-btn i {
+  color: #dc6766;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
 /* Navbar */
 .navbar {
-  background-color: #62C3E7;
+  background-color: #8CBFAB;
 }
 
 .navbar ul {
@@ -38,20 +49,33 @@ section {
 }
 
 /* Carrossel */
-.carousel-indicators li {
-  position: relative;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
+.carousel-control-prev i,
+.carousel-control-next i {
   background-color: #dc6766;
-  ;
+  border-radius: 50%;
+  padding: 1.5em;
 }
 
-.carousel-indicators {
-  list-style: none;
+/* Sobre */
+.about {
+  width: 80%;
+}
+
+.content-about p {
+  text-align: justify;
+}
+
+/* Produtos populares */
+.popular-products {
+  width: 80%;
+}
+
+.content-popular-products {
+  text-align: justify;
+}
+
+/* Footer */
+.footer {
+  background-color: #e0dfdf;
+  flex-direction: column;
 }
