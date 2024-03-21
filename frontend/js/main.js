@@ -1,17 +1,36 @@
-window.addEventListener('scroll', function () {
-  var div = document.getElementById('header');
+// Fixa a div que contém login e carrinho no top da página
+pinDivToTop = (divId) => {
+  window.addEventListener('scroll', () => {
+    const div = document.getElementById(divId);
+    // distância da div ao topo da página
+    const distance = div.offsetTop;
+    // posição de rolagem da página
+    const scrollTop = document.documentElement.scrollTop;
+    if (scrollTop > distance) {
+      // Adiciona a classe 'fixed'
+      div.classList.add('fixed');
+    } else {
+      // Remove a classe 'fixed'
+      div.classList.remove('fixed');
+    }
+  });
+};
 
-  // Obtem a distância da div ao topo da página
-  var distance = div.offsetTop;
+pinDivToTop("header");
 
-  // Obtem a posição de rolagem da página
-  var scrollTop = document.documentElement.scrollTop;
+// Faz botão voltar ao topo aparecer na tela
+scrollTop = () => {
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('scroll-top');
+    const scrollTop = document.documentElement.scrollTop;
+    if (scrollTop > 60) {
+      // Adiciona a classe 'active'
+      btn.classList.add('active');
+    } else {
+      // Remove a classe 'active'
+      btn.classList.remove('active');
+    }
+  });
+};
 
-  if (scrollTop > distance) {
-    // Adiciona a classe 'fixed' quando a página for rolada para baixo além da posição da div
-    div.classList.add('fixed');
-  } else {
-    // Remove a classe 'fixed' quando a página for rolada para cima e a div voltar à sua posição original
-    div.classList.remove('fixed');
-  }
-});
+scrollTop();

@@ -46,14 +46,16 @@ section {
 }
 
 .icons-btn i {
-  color: #F47983;
+  /* color: #F47983; */
+  color: #212529;
   cursor: pointer;
   font-size: 1.2em;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #8CBFAB;
+  /* background-color: #8CBFAB; */
+  background-color: #212529;
 }
 
 .navbar ul {
@@ -77,6 +79,7 @@ section {
 
 .btn-carousel:hover {
   background-color: #ff90aee7;
+  padding: 21px 51px;
 }
 
 .carousel-control-prev i,
@@ -87,7 +90,6 @@ section {
 }
 
 /* Sobre */
-/* #C8A696 */
 .about {
   width: 80%;
 }
@@ -109,13 +111,14 @@ section {
 }
 
 .content-about span {
-  color: #C8A696;
+  color: #ff90ae;
 }
 
 .content-about a {
   align-self: center;
   animation: moveDown 1.2s infinite alternate;
-  color: #8CBFAB;
+  /* color: #8CBFAB; */
+  color: #212529;
   font-size: 3em;
 }
 
@@ -135,11 +138,110 @@ section {
 }
 
 .content-popular-products {
+  border-radius: 5%;
+  color: #212529;
   text-align: justify;
+  height: 65%;
+}
+
+.content-popular-products h2 span {
+  color: #ff90ae;
+}
+
+.popular-products-title h2 span {
+  color: #ff90ae;
+}
+
+.popular-products-title img {
+  border-radius: 5%;
+}
+
+.btn-menu a {
+  background-color: #ff90ae;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px gray;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 50px;
+}
+
+.btn-menu a:hover {
+  background-color: #ff90aee7;
+  padding: 21px 51px;
 }
 
 /* Footer */
 .footer {
   background-color: #e0dfdf;
   flex-direction: column;
+}
+
+.column-1,
+.column-2,
+.column-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-1 a,
+.column-2 a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.column-3 {
+  align-items: center;
+  color: #212529;
+}
+
+.btn-feed {
+  background-color: #ff90ae;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px gray;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.btn-feed:hover {
+  background-color: #ff90aee7;
+}
+
+.div-2-footer {
+  border-top: 1px solid black;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.rights-reserved p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.social-icon a {
+  color: #ff90ae;
+  font-size: 1.6em;
+  margin-left: 0.8em;
+  text-decoration: none;
+}
+
+
+/* Botão voltar ao topo */
+#scroll-top {
+  background: #ff90ae;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 1.1rem;
+  position: fixed;
+  right: 2rem;
+  text-decoration: none;
+  top: -140%;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+/*Quando o botão está ativo, ele desce */
+#scroll-top.active {
+  top: calc(100% - 20rem);
 }

@@ -19,6 +19,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -61,6 +62,7 @@
 
   <!-- Conteúdo principal -->
   <main id="home">
+
     <!-- Carrossel Início -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
@@ -132,11 +134,11 @@
     <!-- Início Sobre -->
     <section id="about" class="d-flex justify-content-center">
       <div class="about d-flex">
-        <div class="p-4 me-4 mt-5">
+        <div class="p-4 me-4 mt-5" id="img-about">
           <img src="../img/photoabout.png" alt="foto profissional" />
         </div>
 
-        <div class="content-about p-5 ms-4 mt-5 bg-light">
+        <div class="content-about p-5 ms-4 mt-5 bg-light" id="content-about">
           <h2 class="mb-3">
             <i class="fa-solid fa-user me-2"></i>
             Sobre <span>Mim</span> e <span>Meu Trabalho</span>
@@ -170,14 +172,14 @@
 
     <!-- Início das informações de produtos populares -->
     <section id="popular" class="d-flex justify-content-center">
-      <div class="popular-products d-flex">
-        <div class="p-2 mt-2">
-          <h2>Produtos <span> Mais Populares</span></h2>
+      <div class="popular-products d-flex mt-5">
+        <div class="popular-products-title p-2 mt-2">
+          <h2 class="mb-2">Produtos <span> Mais Populares</span></h2>
           <img src="../img/popularproducts.png" alt="produtos populares" />
         </div>
 
-        <div class="content-popular-products p-2 mt-5">
-          <h2>
+        <div class="content-popular-products p-4 mt-5 bg-light">
+          <h2 class="mb-3">
             <i class="fa-solid fa-pen-to-square"></i>
             Faça <span>Seu Pedido!</span>
           </h2>
@@ -191,7 +193,7 @@
             ccusantium dolorum, odio alias saepe. Officiis ut quas
             adipisci illum sed id suscipit veniam.
           </p>
-          <div>
+          <div class="btn-menu mt-4">
             <a href="#" target="_blank">
               <span>Cardápio completo</span>
             </a>
@@ -203,55 +205,51 @@
 
     <!-- Início do Rodapé -->
     <footer class="footer d-flex">
-      <div class="d-flex justify-content-around">
-        <div>
+      <div class="d-flex justify-content-evenly">
+        <div class="column-1 m-5">
           <h6>Petit Four</h6>
           <a href="#home">Home</a>
           <a href="#about">Quem Sou</a>
           <a href="../pages/products.html">Produtos</a>
         </div>
 
-        <div>
+        <div class="column-2 m-5">
           <h6>Conta</h6>
           <a href="#">Login</a>
           <a href="#home">Carrinho</a>
         </div>
 
-        <div>
+        <div class="column-3 m-5">
           <h5>Horário de Funcionamento</h5>
           <p>Terça – Domingo, 13:00 – 22:00</p>
           <p>Segunda: fechado</p>
         </div>
 
-        <div>
+        <div class="m-5">
           <img src="../img/logo.png" alt="logo">
-          <h5> Me envie seu feedback</h5>
-          <input type="text" placeholder="Escreva aqui seu feedback">
-          <button type="submit">Enviar</button>
+          <h5 class="mt-3"> Me envie seu feedback</h5>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Escreva aqui o seu feedback">
+            <button type="submit" class="btn-feed">Enviar</button>
+          </div>
         </div>
       </div>
 
-      <div class="d-flex justify-content-between">
-        <div>
-          <p class="m-0">&copy;Todos os Direitos Reservados - 2024</p>
+      <div class="div-2-footer d-flex justify-content-between">
+        <div class="rights-reserved mt-4">
+          <p>&copy;Todos os Direitos Reservados - 2024</p>
         </div>
-        <div>
-          <a href="#" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="#" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#" target="_blank">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
+        <div class="social-icon mt-4 mb-2">
+          <a href="#" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="#" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="#" target="_blank" class="fa-brands fa-x-twitter"></a>
         </div>
       </div>
     </footer>
   </main>
 
   <!-- Voltar para o topo -->
-  <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+  <a href="#" class="fas fa-angle-up" id="scroll-top"></a>
 
   <script src="../js/main.js"></script>
 </body>
