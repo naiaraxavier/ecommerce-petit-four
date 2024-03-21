@@ -1,3 +1,4 @@
+/* Estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -23,11 +24,10 @@ body {
   color: #fff;
 }
 
-section {
-  min-height: 100vh;
-}
+/* ---------------------------------------------------------- */
 
-/* Header */
+
+/* Estilos do Header da página */
 .header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -52,7 +52,7 @@ section {
   font-size: 1.2em;
 }
 
-/* Navbar */
+/* Estilos do Navbar */
 .navbar {
   /* background-color: #8CBFAB; */
   background-color: #212529;
@@ -63,7 +63,15 @@ section {
   text-transform: uppercase;
 }
 
-/* Carrossel */
+/* ---------------------------------------------------------- */
+
+
+/* Estilos da página inicial | Home */
+.sec {
+  min-height: 100vh;
+}
+
+/* Estilos do Carrossel */
 .carousel-indicators button.active {
   background-color: #dc6866e6;
 }
@@ -89,7 +97,10 @@ section {
   padding: 1.5em;
 }
 
-/* Sobre */
+/* ----------------------------------------------------------- */
+
+
+/* Estilos do Sobre */
 .about {
   width: 80%;
 }
@@ -132,7 +143,9 @@ section {
   }
 }
 
-/* Produtos populares */
+/* ----------------------------------------------------------------- */
+
+/* Estilos da seção de Produtos populares */
 .popular-products {
   width: 80%;
 }
@@ -170,7 +183,9 @@ section {
   padding: 21px 51px;
 }
 
-/* Footer */
+/* ------------------------------------------------------------------- */
+
+/* Estilos do Rodapé */
 .footer {
   background-color: #e0dfdf;
   flex-direction: column;
@@ -191,42 +206,71 @@ section {
 
 .column-3 {
   align-items: center;
-  color: #212529;
 }
 
-.btn-feed {
-  background-color: #ff90ae;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px gray;
-  color: #fff;
+.column-1 h6,
+.column-2 h6,
+.column-3 h6 {
+  color: #F47983;
+  text-transform: uppercase;
+}
+
+.column-1 a,
+.column-2 a,
+.column-3 a {
+  color: #596572;
+  font-size: 0.8rem;
   text-decoration: none;
-  padding: 10px 20px;
 }
 
-.btn-feed:hover {
-  background-color: #ff90aee7;
+.column-1 a:hover,
+.column-2 a:hover,
+.column-3 a:hover {
+  color: #72869b;
 }
 
-.div-2-footer {
-  border-top: 1px solid black;
-  margin: 0 auto;
-  width: 80%;
+.quick-links {
+  background-color: #ffe5deed;
+}
+
+.column-4 p {
+  color: #596572;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.c-address {
+  display: flex;
+  align-items: center;
+}
+
+.column-4 i {
+  color: #F47983;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.social-media {
+  background-color: #f4c4b8;
 }
 
 .rights-reserved p {
+  color: #72869b;
   font-size: 15px;
   font-weight: bold;
 }
 
 .social-icon a {
-  color: #ff90ae;
+  color: #fff;
   font-size: 1.6em;
   margin-left: 0.8em;
   text-decoration: none;
 }
 
+/* -------------------------------------------------------------------- */
 
-/* Botão voltar ao topo */
+
+/* Estilos do Botão voltar ao topo */
 #scroll-top {
   background: #ff90ae;
   border-radius: 50%;
@@ -245,3 +289,5 @@ section {
 #scroll-top.active {
   top: calc(100% - 20rem);
 }
+
+/* ------------------------------------------------------------------------- */
