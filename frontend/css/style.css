@@ -54,7 +54,7 @@ body {
 
 /* Estilos do Navbar */
 .navbar {
-  background: linear-gradient(to top, #333333, #666666);
+  background-color: #333333;
 }
 
 .navbar ul {
