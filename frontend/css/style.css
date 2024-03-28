@@ -1,5 +1,6 @@
 /* Estilos gerais */
 * {
+  color: #333333;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,7 +30,7 @@ body {
 
 /* Estilos do Header da página */
 .header {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px #0000001a;
   position: relative;
   transition: top 0.5s ease-in-out;
   width: 100%;
@@ -46,16 +47,14 @@ body {
 }
 
 .icons-btn i {
-  /* color: #F47983; */
-  color: #212529;
+  color: #333333;
   cursor: pointer;
   font-size: 1.2em;
 }
 
 /* Estilos do Navbar */
 .navbar {
-  /* background-color: #8CBFAB; */
-  background-color: #212529;
+  background: linear-gradient(to top, #333333, #666666);
 }
 
 .navbar ul {
@@ -79,7 +78,7 @@ body {
 .btn-carousel {
   background-color: #ff90ae;
   border-radius: 10px;
-  box-shadow: 3px 3px 3px gray;
+  box-shadow: 3px 3px 3px #666666;
   color: #fff;
   text-decoration: none;
   padding: 20px 50px;
@@ -107,15 +106,10 @@ body {
 
 .content-about {
   border-radius: 5%;
-  color: #212529;
   display: flex;
   flex-direction: column;
   height: 80%;
 }
-
-/* .content-about:hover {
-  background-color: #c8a696ad !important;
-} */
 
 .content-about p {
   text-align: justify;
@@ -128,8 +122,6 @@ body {
 .content-about a {
   align-self: center;
   animation: moveDown 1.2s infinite alternate;
-  /* color: #8CBFAB; */
-  color: #212529;
   font-size: 3em;
 }
 
@@ -152,7 +144,6 @@ body {
 
 .content-popular-products {
   border-radius: 5%;
-  color: #212529;
   text-align: justify;
   height: 65%;
 }
@@ -172,7 +163,7 @@ body {
 .btn-menu a {
   background-color: #ff90ae;
   border-radius: 10px;
-  box-shadow: 3px 3px 3px gray;
+  box-shadow: 3px 3px 3px #808080;
   color: #fff;
   text-decoration: none;
   padding: 20px 50px;
@@ -200,7 +191,6 @@ body {
 
 .column-1 a,
 .column-2 a {
-  color: #212529;
   text-decoration: none;
 }
 
@@ -211,7 +201,7 @@ body {
 .column-1 h6,
 .column-2 h6,
 .column-3 h6 {
-  color: #F47983;
+  /* color: #F47983; */
   text-transform: uppercase;
 }
 
@@ -255,7 +245,7 @@ body {
 }
 
 .rights-reserved p {
-  color: #72869b;
+  color: #666666;
   font-size: 15px;
   font-weight: bold;
 }
