@@ -281,3 +281,154 @@ body {
 }
 
 /* ------------------------------------------------------------------------- */
+
+/* Estilos da página de checkout */
+.body-checkout {
+  background-color: #F7F7F7;
+}
+
+.main-checkout {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.main-checkout h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+
+.container-checkout span {
+  color: #ff90ae;
+}
+
+.container-checkout {
+  margin: 1em;
+  padding: 2em;
+}
+
+#title-checkout {
+  font-size: 23px;
+  margin-bottom: 2.5em;
+}
+
+.container-checkout h2 {
+  font-size: 35px;
+  margin-top: 2em;
+}
+
+.container-checkout h5,
+h6 {
+  font-size: 25px;
+}
+
+.container-checkout h6 {
+  margin-top: 2em;
+}
+
+.container-checkout p {
+  font-size: 20px;
+}
+
+.container-summary {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 2em;
+}
+
+.summary {
+  border: 2px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5em;
+  justify-content: space-between;
+  padding: 1.5em;
+  height: 633px;
+  width: 541px;
+}
+
+.container-summary h3 span {
+  color: #ff90ae;
+}
+
+.container-summary h3 {
+  font-size: 30px;
+}
+
+.container-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-btn-checkout {
+  display: flex;
+  justify-content: center;
+}
+
+.container-btn-checkout button {
+  background-color: #ff90ae;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #808080;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 55px;
+  width: 255px;
+}
+
+.container-btn-checkout button:hover {
+  background-color: #f9a3ba;
+}
+
+.products li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total,
+.products {
+  margin: 1.5em 0em;
+}
+
+.total li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.t-color span {
+  color: #5e5a5a;
+}
+
+.container-back-btn {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.container-back-btn a {
+  background-color: #f9a3ba;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #808080;
+  padding: 12px 80px;
+  text-decoration: none;
+}
+
+.container-back-btn a:hover {
+  background-color: #fbb2c5;
+}
+
+.container-back-btn a span,
+i {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
