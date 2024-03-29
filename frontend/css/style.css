@@ -54,7 +54,6 @@ body {
 
 .icons-btn i:hover {
   color: #ff90ae;
-  font-size: 1.1em;
 }
 
 /* Estilos do Navbar */
@@ -83,6 +82,9 @@ body {
 }
 
 .shopping-cart-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   padding: 2em;
 }
 
@@ -102,6 +104,59 @@ body {
   background-color: #ff90ae;
   color: #fff;
   padding: 0.2rem 0.6rem;
+}
+
+.shopping-cart-content .logo {
+  margin: 1.5rem;
+}
+
+.title-shop-cart {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title-shop-cart span {
+  color: #ff90ae;
+}
+
+.cart-product {
+  display: flex;
+  margin: 2.5rem;
+}
+
+.total-shop-cart {
+  background-color: #ece7e7;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-shop-cart p {
+  margin: 10px;
+}
+
+.btn-finalize {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.btn-finalize a {
+  background-color: #ff90ae;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #808080;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-finalize a:hover {
+  background-color: #f89eb6;
+  padding: 13px 31px;
 }
 
 /* ----------------------------------------------------------- */

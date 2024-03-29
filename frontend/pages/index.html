@@ -63,32 +63,37 @@
   <div class="shopping-cart" id="shopping-cart">
     <div class="shopping-cart-content">
       <span class="close">&times;</span>
-      <div>
+      <div class="logo">
         <img src="../img/logo.png" alt="logo">
       </div>
 
       <div>
         <p>*Total de <span>1</span> itens no carrinho</p>
-        <p>Carrinho de <span>compras</span></p>
+        <p class="title-shop-cart">Carrinho de <span>compras</span></p>
 
         <div class="cart-product">
-          <img src="../img/carousel-1.jpg" alt="cupcake" width="150px">
-          <p>Nome do Produto</p>
-          <span>R$ 10,00</span>
           <div>
-            <button id="increaseBtn">+</button>
-            <span>0</span>
-            <button id="decreaseBtn">-</button>
+            <img src="../img/carousel-1.jpg" alt="cupcake" width="150px">
           </div>
-          <button>Remover</button>
+
+          <div>
+            <p>Nome do Produto</p>
+            <span>R$ 10,00</span>
+            <div>
+              <button id="increaseBtn">+</button>
+              <span>0</span>
+              <button id="decreaseBtn">-</button>
+            </div>
+            <button>Remover</button>
+          </div>
         </div>
 
-        <div>
-          <p>Total: R$ 10,00</p>
-          <p>Total de <span>1</span> itens</p>
+        <div class="total-shop-cart">
+          <p><strong>TOTAL: R$ 10,00</strong></p>
+          <p>*Total de <span>1</span> itens</p>
         </div>
 
-        <div>
+        <div class="btn-finalize">
           <a href="./checkout.html">Finalizar Compra</a>
         </div>
       </div>
