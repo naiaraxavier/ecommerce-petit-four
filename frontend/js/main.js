@@ -35,19 +35,46 @@ window.addEventListener('scroll', () => {
   scrollTop();
 });
 
-
-//Funções do botão Carrinho de compras
-
-//adiciona display block ao clicar no ícone do carrinho
-function openShoppingCart() {
-  document.getElementById('shopping-cart').style.display = 'block';
+// Função genérica para abrir um elemento
+openElement = (elementId) => {
+  if (elementId !== 'shopping-cart') {
+    document.getElementById('bkg-faded').classList.add('bkg-faded');
+  }
+  document.getElementById(elementId).style.display = 'block';
 }
 
-document.getElementById('cartBtn').addEventListener('click', openShoppingCart);
-
-//adiciona display none para fechar o carrinho
-function closeShoppingCart() {
-  document.getElementById('shopping-cart').style.display = 'none';
+// Função genérica para fechar um elemento
+closeElement = (elementId) => {
+  if (elementId !== 'shopping-cart') {
+    document.getElementById('bkg-faded').classList.remove('bkg-faded');
+  }
+  document.getElementById(elementId).style.display = 'none';
 }
 
-document.querySelector('.close').addEventListener('click', closeShoppingCart);
+// Funções para manipular o carrinho de compras
+document.getElementById('cartBtn').addEventListener('click', () => {
+  openElement('shopping-cart');
+});
+
+document.querySelector('.close').addEventListener('click', () => {
+  closeElement('shopping-cart');
+});
+
+// Funções para manipular o formulário de Nova Forma de Pagamento
+document.getElementById('add-payment').addEventListener('click', () => {
+  openElement('payment-method-form');
+});
+
+document.querySelector('.close-form-pay').addEventListener('click', () => {
+  closeElement('payment-method-form');
+});
+
+// Funções para manipular o formulário de Novo Endereço de Entrega
+document.getElementById('add-address').addEventListener('click', () => {
+  openElement('new-address-form');
+});
+
+document.querySelector('.close-form-address').addEventListener('click', () => {
+  closeElement('new-address-form');
+});
+
