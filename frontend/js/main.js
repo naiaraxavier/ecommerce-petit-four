@@ -34,3 +34,47 @@ window.addEventListener('scroll', () => {
   pinDivToTop("header");
   scrollTop();
 });
+
+// Função genérica para abrir um elemento
+openElement = (elementId) => {
+  if (elementId !== 'shopping-cart') {
+    document.getElementById('bkg-faded').classList.add('bkg-faded');
+  }
+  document.getElementById(elementId).style.display = 'block';
+}
+
+// Função genérica para fechar um elemento
+closeElement = (elementId) => {
+  if (elementId !== 'shopping-cart') {
+    document.getElementById('bkg-faded').classList.remove('bkg-faded');
+  }
+  document.getElementById(elementId).style.display = 'none';
+}
+
+// Funções para manipular o carrinho de compras
+document.getElementById('cartBtn').addEventListener('click', () => {
+  openElement('shopping-cart');
+});
+
+document.querySelector('.close').addEventListener('click', () => {
+  closeElement('shopping-cart');
+});
+
+// Funções para manipular o formulário de Nova Forma de Pagamento
+document.getElementById('add-payment').addEventListener('click', () => {
+  openElement('payment-method-form');
+});
+
+document.querySelector('.close-form-pay').addEventListener('click', () => {
+  closeElement('payment-method-form');
+});
+
+// Funções para manipular o formulário de Novo Endereço de Entrega
+document.getElementById('add-address').addEventListener('click', () => {
+  openElement('new-address-form');
+});
+
+document.querySelector('.close-form-address').addEventListener('click', () => {
+  closeElement('new-address-form');
+});
+

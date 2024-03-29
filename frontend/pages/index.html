@@ -34,7 +34,7 @@
       </div>
 
       <div class="icons-btn me-5 mt-1">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping" id="cartBtn"></i>
         <i class="fa-solid fa-user ms-3"></i>
       </div>
 
@@ -58,6 +58,81 @@
     </nav>
   </header>
   <!-- Fim do Header -->
+
+  <!-- Carrinho de compras -->
+  <div class="shopping-cart" id="shopping-cart">
+    <div class="shopping-cart-content">
+      <span class="close">&times;</span>
+      <div class="logo">
+        <img src="../img/logo.png" alt="logo">
+      </div>
+
+      <div>
+        <p>*Total de <span>2</span> itens no carrinho</p>
+        <p class="title-shop-cart">Carrinho de <span>compras</span></p>
+
+        <!-- Inicio do card -->
+        <div class="cart-product">
+          <div class="cart-product-img">
+            <img src="../img/carousel-1.jpg" alt="cupcake">
+          </div>
+
+          <div class="info-product-cart">
+            <p>Nome do Produto</p>
+
+            <div class="cart-price">
+              <span>R$ 10,00</span>
+              <div>
+                <button id="increaseBtn">+</button>
+                <span>0</span>
+                <button id="decreaseBtn">-</button>
+              </div>
+            </div>
+
+            <div class="cart-btn-remove">
+              <button>Remover</button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do card -->
+
+        <!-- Inicio do card -->
+        <div class="cart-product">
+          <div class="cart-product-img">
+            <img src="../img/carousel-1.jpg" alt="cupcake">
+          </div>
+
+          <div class="info-product-cart">
+            <p>Nome do Produto</p>
+
+            <div class="cart-price">
+              <span>R$ 10,00</span>
+              <div>
+                <button id="increaseBtn">+</button>
+                <span>0</span>
+                <button id="decreaseBtn">-</button>
+              </div>
+            </div>
+
+            <div class="cart-btn-remove">
+              <button>Remover</button>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do card -->
+
+        <div class="total-shop-cart">
+          <p><strong>TOTAL: R$ 20,00</strong></p>
+          <p>*Total de <span>2</span> itens</p>
+        </div>
+
+        <div class="btn-finalize">
+          <a href="./checkout.html">Finalizar Compra</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim do carrinho de compras -->
 
   <!-- Conteúdo principal -->
   <main id="home">
@@ -215,7 +290,7 @@
         <div class="column-2 m-5">
           <h6>Conta</h6>
           <a href="./login.html">Login</a>
-          <a href="./shopping-cart.html">Carrinho</a>
+          <a href="./checkout.html">Carrinho</a>
         </div>
 
         <div class="column-3 m-5">

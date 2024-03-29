@@ -52,6 +52,10 @@ body {
   font-size: 1.2em;
 }
 
+.icons-btn i:hover {
+  color: #ff90ae;
+}
+
 /* Estilos do Navbar */
 .navbar {
   background-color: #333333;
@@ -64,6 +68,146 @@ body {
 
 /* ---------------------------------------------------------- */
 
+/* Estilos do Carrinho de compras */
+.shopping-cart {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  right: 10px;
+  top: 10px;
+  width: 600px;
+  height: 900px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+}
+
+.shopping-cart-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.close {
+  background-color: #ece7e7;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: #ff90ae;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+}
+
+.shopping-cart-content .logo {
+  margin: 1.5rem;
+}
+
+.title-shop-cart {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title-shop-cart span {
+  color: #ff90ae;
+}
+
+.cart-product {
+  display: flex;
+  margin: 1rem;
+}
+
+.cart-product-img {
+  height: 161px;
+  margin: 0.5rem;
+  position: relative;
+  width: 160px;
+}
+
+.cart-product-img img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-product-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.info-product-cart p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.cart-btn-remove {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-btn-remove button {
+  background-color: #ff90ae;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #808080;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 55px;
+  width: 255px;
+}
+
+
+.cart-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-shop-cart {
+  background-color: #ece7e7;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-shop-cart p {
+  margin: 10px;
+}
+
+.btn-finalize {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.btn-finalize a {
+  background-color: #ff90ae;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #808080;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-finalize a:hover {
+  background-color: #f89eb6;
+  padding: 13px 31px;
+}
+
+/* ----------------------------------------------------------- */
 
 /* Estilos da página inicial | Home */
 .sec {
@@ -201,7 +345,6 @@ body {
 .column-1 h6,
 .column-2 h6,
 .column-3 h6 {
-  /* color: #F47983; */
   text-transform: uppercase;
 }
 
@@ -281,3 +424,262 @@ body {
 }
 
 /* ------------------------------------------------------------------------- */
+
+/* Estilos da página de checkout */
+.body-checkout {
+  background-color: #F7F7F7;
+}
+
+.main-checkout {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.main-checkout h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+
+.container-checkout span {
+  color: #ff90ae;
+}
+
+.container-checkout {
+  margin: 1em;
+  padding: 2em;
+}
+
+.title-checkout {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.title-checkout a i {
+  color: #333333;
+  font-size: 25px;
+  margin-right: 0.5em;
+}
+
+#title-checkout {
+  font-size: 23px;
+  margin: 0;
+}
+
+.container-checkout h2 {
+  font-size: 35px;
+}
+
+.container-checkout h5,
+h6 {
+  font-size: 25px;
+}
+
+.container-checkout p {
+  font-size: 20px;
+}
+
+.payment-method,
+.delivery-address {
+  align-items: center;
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.add-payment i,
+.add-address i {
+  color: #333333;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.payment-method h2,
+.delivery-address h2 {
+  margin: 0px 20px;
+}
+
+.delivery-address button,
+.payment-method button {
+  background-color: transparent;
+}
+
+.delivery-address i:hover,
+.payment-method i:hover {
+  background-color: #ff90ae;
+  color: #fff;
+}
+
+.container-summary {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 2em;
+}
+
+.summary {
+  border: 2px solid #333333;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5em;
+  justify-content: space-between;
+  padding: 1.5em;
+  height: 633px;
+  width: 541px;
+}
+
+.container-summary h3 span {
+  color: #ff90ae;
+}
+
+.container-summary h3 {
+  font-size: 30px;
+}
+
+.container-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container-btn-checkout {
+  display: flex;
+  justify-content: center;
+}
+
+.container-btn-checkout button {
+  background-color: #ff90ae;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #808080;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 55px;
+  width: 255px;
+}
+
+.container-btn-checkout button:hover {
+  background-color: #f9a3ba;
+}
+
+.products li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total,
+.products {
+  margin: 1.5em 0em;
+}
+
+.total li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.t-color span {
+  color: #5e5a5a;
+}
+
+.container-back-btn {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.container-back-btn a {
+  background-color: #f9a3ba;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #808080;
+  padding: 12px 80px;
+  text-decoration: none;
+}
+
+.container-back-btn a:hover {
+  background-color: #fbb2c5;
+}
+
+.container-back-btn a span,
+i {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Estilos do formulário nova forma de pagamento */
+.payment-method-form,
+.new-address-form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: 700px;
+  height: 660px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.payment-form-content,
+.new-address-content {
+  padding: 2em;
+}
+
+.close-form-pay,
+.close-form-address {
+  background-color: #ece7e7;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close-form-pay:hover,
+.close-form-address:hover {
+  background-color: #ff90ae;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+
+/* Estilo de Esmuecer a tela ao abrir o formulário */
+.bkg-faded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+
+/* Estilo do botão Editar e Deletar */
+.btn-edit-del {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-edit-del i {
+  color: #333333;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
