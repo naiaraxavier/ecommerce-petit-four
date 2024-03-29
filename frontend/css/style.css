@@ -52,6 +52,11 @@ body {
   font-size: 1.2em;
 }
 
+.icons-btn i:hover {
+  color: #ff90ae;
+  font-size: 1.1em;
+}
+
 /* Estilos do Navbar */
 .navbar {
   background-color: #333333;
@@ -64,6 +69,42 @@ body {
 
 /* ---------------------------------------------------------- */
 
+/* Estilos do Carrinho de compras */
+.shopping-cart {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  right: 10px;
+  top: 10px;
+  width: 600px;
+  height: 900px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+}
+
+.shopping-cart-content {
+  padding: 2em;
+}
+
+.close {
+  background-color: #ece7e7;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: #ff90ae;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+}
+
+/* ----------------------------------------------------------- */
 
 /* Estilos da página inicial | Home */
 .sec {
@@ -312,14 +353,24 @@ h6 {
   padding: 2em;
 }
 
+.title-checkout {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.title-checkout a i {
+  color: #333333;
+  font-size: 25px;
+  margin-right: 0.5em;
+}
+
 #title-checkout {
   font-size: 23px;
-  margin-bottom: 2.5em;
+  margin: 0;
 }
 
 .container-checkout h2 {
   font-size: 35px;
-  margin-top: 2em;
 }
 
 .container-checkout h5,
@@ -335,6 +386,38 @@ h6 {
   font-size: 20px;
 }
 
+.payment-method,
+.delivery-address {
+  align-items: center;
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.add-payment i,
+.add-address i {
+  color: #333333;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.payment-method h2,
+.delivery-address h2 {
+  margin: 0px 20px;
+}
+
+.delivery-address button,
+.payment-method button {
+  background-color: transparent;
+}
+
+.delivery-address i:hover,
+.payment-method i:hover {
+  background-color: #ff90ae;
+  color: #fff;
+}
+
 .container-summary {
   display: flex;
   flex-direction: column;
@@ -343,7 +426,7 @@ h6 {
 }
 
 .summary {
-  border: 2px solid #000;
+  border: 2px solid #333333;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -432,3 +515,5 @@ i {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+/* ------------------------------------------------------------------------------------- */

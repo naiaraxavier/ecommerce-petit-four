@@ -28,7 +28,7 @@
       </div>
 
       <div class="icons-btn me-5 mt-1">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping" id="cartBtn"></i>
         <i class="fa-solid fa-user ms-3"></i>
       </div>
 
@@ -53,34 +53,91 @@
   </header>
   <!-- Fim do Header -->
 
+  <!-- Carrinho de compras -->
+  <div class="shopping-cart" id="shopping-cart">
+    <div class="shopping-cart-content">
+      <span class="close">&times;</span>
+      <div>
+        <img src="../img/logo.png" alt="logo">
+      </div>
+
+      <div>
+        <p>*Total de <span>1</span> itens no carrinho</p>
+        <p>Carrinho de <span>compras</span></p>
+
+        <div class="cart-product">
+          <img src="../img/carousel-1.jpg" alt="cupcake" width="150px">
+          <p>Nome do Produto</p>
+          <span>R$ 10,00</span>
+          <div>
+            <button id="increaseBtn">+</button>
+            <span>0</span>
+            <button id="decreaseBtn">-</button>
+          </div>
+          <button>Remover</button>
+        </div>
+
+        <div>
+          <p>Total: R$ 10,00</p>
+          <p>Total de <span>1</span> itens</p>
+        </div>
+
+        <div>
+          <a href="./checkout.html">Finalizar Compra</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim do carrinho de compras -->
+
+  <!-- Inicio do conteúdo principal do checkout -->
   <main class="main-checkout">
     <div class="container-checkout">
-      <h5 id="title-checkout">/ <span>Finalizar compra</span></h5>
+      <div class="title-checkout">
+        <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+        <h5 id="title-checkout">/ <span>Finalizar compra</span></h5>
+      </div>
 
       <h2>Confirmação de <span>dados</span></h2>
       <p>Escolha a forma de pagamento e o endereço para entrega (se necessário)</p>
 
-      <h2>Endereço de <span>entrega</span></h2>
-      <h5>Endereço 1</h5>
-      <p>Aqui vem a descrição do endereço. Casa, número da rua e etc...</p>
+      <!-- Parte de endereço do usuário | Adiciona (post) endereço -->
+      <div class="delivery-address">
+        <button class="add-address"><i class="fas fa-plus"></i></button>
+        <h2>Endereço de <span>entrega</span></h2>
+      </div>
 
-      <h2>Forma de <span>pagamento</span></h2>
-      <h6>Nubank</h6>
-      <p>Aqui vem a descrição do cartão. Email, nome do/a títular e etc...</p>
+      <!-- Lista de endereço, com botão (falta o botão) de editar e excluir - backend -->
+      <div>
+        <h5>Endereço 1</h5>
+        <p>Aqui vem a descrição do endereço. Casa, número da rua e etc...</p>
+      </div>
 
-      <h6>Paypal</h6>
-      <p>Aqui vem a descrição do cartão. Email, nome do/a títular e etc...</p>
+      <!-- Parte de métodos de pagamento | Adiciona (post) método de pagamento -->
+      <div class="payment-method">
+        <button class="add-payment"><i class="fas fa-plus"></i></button>
+        <h2>Forma de <span>pagamento</span></h2>
+      </div>
 
-      <h6>Bradesco</h6>
-      <p>Aqui vem a descrição do cartão. Email, nome do/a títular e etc...</p>
+      <!-- Lista de métodos de pagamentos, com botão (falta o botão) de editar e excluir - backend -->
+      <div>
+        <h6>Nubank</h6>
+        <p>Aqui vem a descrição do cartão. Email, nome do/a títular e etc...</p>
 
-      <h6>Pix</h6>
-      <p>Aqui vem a descrição do cartão. Email, nome do/a títular e etc...</p>
+        <h6>Paypal</h6>
+        <p>Aqui vem a descrição do cartão. Email, nome do/a títular e etc...</p>
+
+        <h6>Bradesco</h6>
+        <p>Aqui vem a descrição do cartão. Email, nome do/a títular e etc...</p>
+      </div>
     </div>
 
+    <!-- Resumo com os produtos adicionados no carrinho e o cliente está prestes a comprar -->
     <div class="container-summary">
       <div class="summary">
         <h3>Sumário de <span>compras</span></h3>
+
+        <!-- Lista com os produtos -->
         <ul class="products">
           <li>
             <div>
@@ -105,6 +162,7 @@
           </li>
         </ul>
 
+        <!-- Lista com os totais -->
         <ul class="total">
           <li class="t-color">
             <span>Total do pedido (item)</span>
@@ -119,13 +177,16 @@
             <span>R$ 30,00</span>
           </li>
         </ul>
+
+        <!-- Botão Finalizar Compra -->
         <div class="container-btn-checkout">
           <button>Finalizar compra</button>
         </div>
       </div>
 
+      <!-- Botão Voltar -->
       <div class="container-back-btn">
-        <a href="#">
+        <a href="./index.html">
           <i class="fa-solid fa-arrow-left"></i>
           <span>Voltar</span>
         </a>
@@ -133,6 +194,7 @@
     </div>
 
   </main>
+  <!-- Fim do conteúdo principal do checkout -->
 
   <script src="../js/main.js"></script>
 </body>

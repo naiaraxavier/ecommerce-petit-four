@@ -34,3 +34,20 @@ window.addEventListener('scroll', () => {
   pinDivToTop("header");
   scrollTop();
 });
+
+
+//Funções do botão Carrinho de compras
+
+//adiciona display block ao clicar no ícone do carrinho
+function openShoppingCart() {
+  document.getElementById('shopping-cart').style.display = 'block';
+}
+
+document.getElementById('cartBtn').addEventListener('click', openShoppingCart);
+
+//adiciona display none para fechar o carrinho
+function closeShoppingCart() {
+  document.getElementById('shopping-cart').style.display = 'none';
+}
+
+document.querySelector('.close').addEventListener('click', closeShoppingCart);

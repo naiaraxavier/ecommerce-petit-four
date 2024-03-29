@@ -34,7 +34,7 @@
       </div>
 
       <div class="icons-btn me-5 mt-1">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping" id="cartBtn"></i>
         <i class="fa-solid fa-user ms-3"></i>
       </div>
 
@@ -58,6 +58,43 @@
     </nav>
   </header>
   <!-- Fim do Header -->
+
+  <!-- Carrinho de compras -->
+  <div class="shopping-cart" id="shopping-cart">
+    <div class="shopping-cart-content">
+      <span class="close">&times;</span>
+      <div>
+        <img src="../img/logo.png" alt="logo">
+      </div>
+
+      <div>
+        <p>*Total de <span>1</span> itens no carrinho</p>
+        <p>Carrinho de <span>compras</span></p>
+
+        <div class="cart-product">
+          <img src="../img/carousel-1.jpg" alt="cupcake" width="150px">
+          <p>Nome do Produto</p>
+          <span>R$ 10,00</span>
+          <div>
+            <button id="increaseBtn">+</button>
+            <span>0</span>
+            <button id="decreaseBtn">-</button>
+          </div>
+          <button>Remover</button>
+        </div>
+
+        <div>
+          <p>Total: R$ 10,00</p>
+          <p>Total de <span>1</span> itens</p>
+        </div>
+
+        <div>
+          <a href="./checkout.html">Finalizar Compra</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim do carrinho de compras -->
 
   <!-- Conteúdo principal -->
   <main id="home">
@@ -215,7 +252,7 @@
         <div class="column-2 m-5">
           <h6>Conta</h6>
           <a href="./login.html">Login</a>
-          <a href="./shopping-cart.html">Carrinho</a>
+          <a href="./checkout.html">Carrinho</a>
         </div>
 
         <div class="column-3 m-5">
